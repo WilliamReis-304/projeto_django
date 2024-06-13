@@ -1,6 +1,5 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 
 def home(request):
-    return render(request,"templates/home/index.html")
-
-# Create your views here.
+    return render(request,"gerenciador/paginas/index.html")
