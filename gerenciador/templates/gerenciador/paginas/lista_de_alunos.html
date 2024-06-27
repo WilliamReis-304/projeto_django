@@ -1,0 +1,8 @@
+{%include '../partes/head.html'%}
+<body>
+    <ul>
+        {% for aluno in lista_de_alunos%}
+            <li>{{ aluno.nome_aluno}}</li>
+        {% endfor %}
+    </ul>
+</body>
