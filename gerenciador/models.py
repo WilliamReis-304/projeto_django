@@ -13,7 +13,8 @@ class Cursos(models.Model):
 
 class Alunos(models.Model):
     nome_aluno = models.CharField(max_length=100)
-    curso = models.ForeignKey(Cursos,on_delete=models.SET_NULL, null=True)
+    idade_aluno = models.IntegerField()
+    # curso = models.ForeignKey(Cursos,on_delete=models.SET_NULL, null=True)
 
     def __str__(self) -> str:
         return self.nome_aluno
