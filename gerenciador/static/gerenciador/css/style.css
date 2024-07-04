@@ -7,3 +7,12 @@
 body{
     background-color: rgb(197, 197, 197);
 }
+
+.form-control_me-2 {    
+    background-image: url("lupa.gif");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.3em;
+    padding-left: 1.3em;
+    margin-left: 1.3em;
+  }
