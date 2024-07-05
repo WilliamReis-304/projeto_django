@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Cursos(models.Model):
     nome_curso = models.CharField(max_length=100)
     valor_matricula = models.IntegerField()
-    data_de_inicio = models.DateField(auto_now=True)
+    data_de_inicio = models.DateField()
     hora_da_aula = models.TimeField()
     
     def __str__(self) -> str:

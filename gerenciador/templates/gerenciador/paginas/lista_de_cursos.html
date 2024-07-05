@@ -1,0 +1,30 @@
+{%include '../partes/head.html'%}
+<body >
+    <h1 align="center">Tabela de Cursos</h1>
+    <table align="center">
+        <thead>
+            <tr>
+                <th>Cursos</th>
+                <th>Matrícula(R$)</th>
+                <th>Data</th>
+                <th>Hora</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for curso in lista_de_cursos%}
+            <tr>
+                <td>{{curso.nome_curso}}</td>
+                <td>{{curso.valor_matricula}}</td>
+                <td>{{curso.data_de_inicio}}</td>
+                <td>{{curso.hora_da_aula}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <ul>
+        {% for aluno in lista_de_alunos%}
+            <li>{{ aluno.nome_aluno}}</li>
+        {% endfor %}
+    </ul> -->
+</body>

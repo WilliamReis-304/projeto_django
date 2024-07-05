@@ -1,7 +1,7 @@
 {%include '../partes/head.html'%}
 <body>
-    <h1>Cadastrar Aluno</h1>
-    <form method="post">
+    <h1 align="center">Cadastrar Curso</h1>
+    <form align="center" method="post">
         {% csrf_token %}
         {{form.as_p}}
         <button type="submit">Cadastrar</button>

@@ -1,8 +1,26 @@
 {%include '../partes/head.html'%}
 <body>
-    <ul>
+    <h1 align="center">Tabela de Alunos</h1>
+    <table align="center">
+        <thead>
+                <th>Alunos</th>
+                <th>Idade</th>
+                <!-- <th>Data</th> -->
+                <!-- <th>Hora</th> -->
+        </thead>
+        <tbody>
+            {% for aluno in lista_de_alunos%}
+                <td>{{aluno.nome_aluno}}</td>
+                <td>{{aluno.idade_aluno}}</td>
+                <!-- <td>{{aluno.data}}</td> -->
+                <!-- <td>{{aluno.hora_da_aula}}</td> -->
+            </tbody>
+            {% endfor %}
+    </table>
+    <!-- <ul>
         {% for aluno in lista_de_alunos%}
             <li>{{ aluno.nome_aluno}}</li>
         {% endfor %}
-    </ul>
+    </ul> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
